@@ -11,7 +11,7 @@ describe('doStuffByTimeout', () => {
 
   test('should set timeout with provided callback and timeout', () => {
     const cb = jest.fn();
-    doStuffByInterval(cb, 1000);
+    doStuffByTimeout(cb, 1000);
 
     jest.advanceTimersByTime(1000);
     expect(cb).toHaveBeenCalledTimes(1);
